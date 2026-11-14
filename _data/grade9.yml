@@ -1,0 +1,47 @@
+description: "Програмиране с C++. Учи с кратки обяснения и практични задачи."
+sections:
+  - id: "cpp-sample-unit"
+    title: "Примерен раздел · Начало"
+    lessons:
+      - id: "cpp-sample-01"
+        published: true
+        title: "Първа програма"
+        description: "Пример за проверка на структурата и ресурсите."
+        resources:
+          - id: "theory"
+            type: "theory"
+            path: "/materials/9/cpp-sample-01-theory.html"
+          - id: "tasks"
+            type: "tasks"
+            path: "/materials/9/cpp-sample-01-tasks.html"
+          - id: "homework"
+            type: "homework"
+            path: "/materials/9/cpp-sample-01-homework.html"
+          - id: "extra"
+            type: "extra"
+            path: "/standalone/cpp-example.html"
+      - id: "cpp-sample-02"
+        published: true
+        title: "Променливи и изрази"
+        description: "Пример за проверка на структурата и ресурсите."
+        resources:
+          - id: "theory"
+            type: "theory"
+            path: "/materials/9/cpp-sample-02-theory.html"
+          - id: "tasks"
+            type: "tasks"
+            path: "/materials/9/cpp-sample-02-tasks.html"
+          - id: "homework"
+            type: "homework"
+            path: "/materials/9/cpp-sample-02-homework.html"
+      - id: "cpp-draft"
+        published: false
+        title: "Скрита примерна чернова"
+        resources: []
+  - id: "cpp-draft-unit"
+    title: "Скрит раздел само с чернови"
+    lessons:
+      - id: "cpp-draft-only"
+        published: false
+        title: "Непубликуван урок"
+        resources: []

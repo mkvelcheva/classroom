@@ -1,0 +1,7 @@
+_site/
+.jekyll-cache/
+.bundle/
+vendor/
+.reference-challengers/
+node_modules/
+test-results/

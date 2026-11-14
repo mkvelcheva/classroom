@@ -1,0 +1,10 @@
+- id: grade9
+  number: 9
+  language: C++
+  path: /9/
+  description: Първи стъпки в програмирането. От идея до работеща програма.
+- id: grade11
+  number: 11
+  language: Java
+  path: /11/
+  description: Развивай уменията си с Java, стъпка по стъпка.

@@ -1,0 +1,47 @@
+description: "Програмиране с Java. Учи с кратки обяснения и практични задачи."
+sections:
+  - id: "java-sample-unit"
+    title: "Примерен раздел · Начало"
+    lessons:
+      - id: "java-sample-01"
+        published: true
+        title: "Първа програма"
+        description: "Пример за проверка на структурата и ресурсите."
+        resources:
+          - id: "theory"
+            type: "theory"
+            path: "/materials/11/java-sample-01-theory.html"
+          - id: "tasks"
+            type: "tasks"
+            path: "/materials/11/java-sample-01-tasks.html"
+          - id: "homework"
+            type: "homework"
+            path: "/materials/11/java-sample-01-homework.html"
+          - id: "extra"
+            type: "extra"
+            path: "/standalone/java-example.html"
+      - id: "java-sample-02"
+        published: true
+        title: "Променливи и изрази"
+        description: "Пример за проверка на структурата и ресурсите."
+        resources:
+          - id: "theory"
+            type: "theory"
+            path: "/materials/11/java-sample-02-theory.html"
+          - id: "tasks"
+            type: "tasks"
+            path: "/materials/11/java-sample-02-tasks.html"
+          - id: "homework"
+            type: "homework"
+            path: "/materials/11/java-sample-02-homework.html"
+      - id: "java-draft"
+        published: false
+        title: "Скрита примерна чернова"
+        resources: []
+  - id: "java-draft-unit"
+    title: "Скрит раздел само с чернови"
+    lessons:
+      - id: "java-draft-only"
+        published: false
+        title: "Непубликуван урок"
+        resources: []

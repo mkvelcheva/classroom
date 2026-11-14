@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="bg">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ site.description | escape }}">
+  <title>{{ page.title | escape }} · Classroom</title>
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+  <script src="{{ '/assets/progress.js' | relative_url }}" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Към съдържанието</a>
+  <header class="site-header">
+    <a class="brand" href="{{ '/' | relative_url }}"><span class="brand-icon" aria-hidden="true">&lt;/&gt;</span><span>Classroom<small>TEACHING HUB</small></span></a>
+    <nav aria-label="Основна навигация">
+      <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}aria-current="page"{% endif %}>Начало</a>
+      {% for grade in site.data.grades %}<a href="{{ grade.path | relative_url }}" {% if page.grade_id == grade.id %}aria-current="page"{% endif %}>{{ grade.number }}. клас</a>{% endfor %}
+    </nav>
+  </header>
+  <main id="main">{{ content }}</main>
+  <footer><span>Classroom · Teaching Hub</span><span>Учим. Опитваме. Създаваме.</span></footer>
+</body>
+</html>
