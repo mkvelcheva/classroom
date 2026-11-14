@@ -1,0 +1,20 @@
+---
+layout: default
+title: Начало
+---
+<section class="hero home-hero">
+  <div><p class="eyebrow">ИНФОРМАТИКА · 8.–12. КЛАС</p>
+  <h1>Всяка голяма идея<br>започва с <em>първия ред код.</em></h1>
+  <p class="lead">Твоето място за учене, практика и нови открития в програмирането. Избери своя клас и продължи напред.</p>
+  <a class="button primary" href="#classes">Избери своя клас <span aria-hidden="true">↗</span></a></div>
+  <div class="code-art" aria-hidden="true"><span class="code-dots">● ● ●</span><pre><span>// Всяко начало е възможност</span>
+while (curious) {
+  learn();
+  tryAgain();
+  create();
+}</pre><div class="code-tag">малки стъпки → големи идеи</div></div>
+</section>
+<section id="classes"><p class="eyebrow">ТВОЯТ УЧЕБЕН ПЪТ</p><h2>С какво ще започнем днес?</h2><p class="muted">Засега разработваме материалите за 9. и 11. клас.</p>
+<div class="grade-grid">{% for grade in site.data.grades %}<a class="grade-card" href="{{ grade.path | relative_url }}"><span class="language">{{ grade.language }}</span><h3>{{ grade.number }}. клас</h3><p>{{ grade.description }}</p><span class="card-link">Към уроците <span aria-hidden="true">→</span></span></a>{% endfor %}</div>
+</section>
+<aside class="notice"><strong>Изграждаме Classroom заедно.</strong> Това е първа версия с примерни уроци. Учебните раздели ще бъдат уточнени след проверка на програмите на МОН.</aside>

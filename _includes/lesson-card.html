@@ -1,0 +1,6 @@
+<li class="lesson" id="{{ include.lesson.id }}"><span class="number" aria-hidden="true">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span><article class="lesson-card"><p class="eyebrow">ПРИМЕРЕН УРОК</p><h3>{{ include.lesson.title }}</h3><p class="muted">{{ include.lesson.description }}</p><div class="resources">
+{% for resource in include.lesson.resources %}
+{% assign label = site.data.resource_types[resource.type] %}
+<div class="resource resource-{{ resource.type }}"><a href="{{ resource.path | relative_url }}">{{ label }}</a><label class="check"><input type="checkbox" data-resource="{{ include.lesson.id }}:{{ resource.id }}"><span class="sr-only">Прегледано: {{ label }} — {{ include.lesson.title }}</span><span aria-hidden="true">✓</span></label></div>
+{% endfor %}
+</div></article></li>
